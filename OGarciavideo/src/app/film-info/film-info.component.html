@@ -1,0 +1,22 @@
+<div class=titulo>
+  <h1>{{peli.nombre}}</h1>
+</div>
+
+<div class="row">
+
+  <div class="col-lg-6 col-md-3 col-sm-12">
+    <img class="card-img-top" src="{{ 'assets/img/' + peli.id + '.jpg' }}" alt="Card image cap">
+  </div>
+  <div class="col-lg-6 col-md-9 col-sm-12">
+    <div class=director><b>Director: </b><a href="search;tag={{peli.director}}">{{peli.director}} </a> <b>Género: </b><a href="search;tag={{peli.genero}}">{{peli.genero}}</a></div>
+    <div class=descripcion>
+      {{peli.descripcion}}
+      <br><br>
+      <button type="button" class="btn btn-light">Play</button>
+      <button type="button" class="btn btn-dark">☆</button>
+      <!-- ★ -->
+    </div>
+
+  </div>
+
+</div>

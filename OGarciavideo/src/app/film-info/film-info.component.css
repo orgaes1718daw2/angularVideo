@@ -1,0 +1,22 @@
+.titulo{
+    text-align: left;
+    margin: 3%;
+}
+.card-img-top{
+    width: 200px;
+    height: 300px;
+    margin-top: 10%;
+}
+.btn.btn-light{
+    background-color: rgb(150, 225, 235);
+    margin-right: 10px;
+}
+
+.btn.btn-dark{
+    background-color: rgb(233, 243, 140);
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+
+}

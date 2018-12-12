@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "nombre" : "Animales fantásticos: Los crímenes de Grindelwald",
+        "genero" : "fantástico",
+        "director" : "David Yates",
+        "descripcion" : "Lorem ipsum dolor sit amet consectetur adipiscing elit, ullamcorper neque massa volutpat sollicitudin dui, nibh himenaeos vivamus facilisi morbi orci. Tempus convallis morbi dapibus mauris interdum orci rhoncus in porta, a fermentum facilisis suspendisse aliquet vulputate urna. Eros primis mauris dapibus ultrices dignissim cubilia etiam pharetra massa, duis dis nunc integer senectus himenaeos orci vitae sodales, posuere taciti consequat dictumst ullamcorper venenatis conubia tristique"
+    },
+    {
+        "id": 1,
+        "nombre" : "Harry Potter y las Reliquias de la Muerte",
+        "genero" : "fantástico",
+        "director" : "David Yates",
+        "descripcion" : "buenos dias"
+    },
+    {
+        "id": 2,
+        "nombre" : "Bohemian Rapsody",
+        "genero" : "drama",
+        "director" : "Bryan Singer",
+        "descripcion" : "buenas tardes"
+    },
+    {
+        "id": 3,
+        "nombre" : "La noche de Halloween",
+        "genero" : "suspense",
+        "director" : "David Gordon Green",
+        "descripcion" : "buenas noches"
+    },
+    {
+        "id": 4,
+        "nombre" : "Night School",
+        "genero" : "comedia",
+        "director" : "Malcolm D. Lee",
+        "descripcion" : "hasta luego"
+    }
+    
+]
