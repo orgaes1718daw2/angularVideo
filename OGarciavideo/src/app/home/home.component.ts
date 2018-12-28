@@ -12,18 +12,25 @@ export class HomeComponent implements OnInit {
 
   public tag: string;
   public pelis: pelicula[] = [];
-  
+  public pelisFavoritas: number[] = [];
+
 
   constructor(
-    private router : Router,
-    private http: HttpClient)
-     {
+    private router: Router,
+    private http: HttpClient) {
   };
 
   ngOnInit() {
     this.pelis = [];
     this.http.get<pelicula[]>('assets/pelis.json').subscribe(respuesta => {
       this.pelis = respuesta;
+      respuesta.forEach(peli => {
+        let esFavorita = localStorage.getItem('peli_' + peli.id);
+        if (esFavorita != undefined) {
+          if (esFavorita == '1')
+            this.pelisFavoritas.push(peli.id);
+        }
+      });
     });
 
   }
@@ -32,6 +39,13 @@ export class HomeComponent implements OnInit {
    * infopeli
    */
   public infopeli(id: number) {
-    this.router.navigate(['/filminfo',{id: id}]);
+    this.router.navigate(['/filminfo', { id: id }]);
+  }
+
+  public esPeliFavorita(id: number): boolean {
+  if( this.pelisFavoritas.find(peliFavorita => peliFavorita == id) != undefined)
+    return true;
+  else 
+    return false;
   }
 }

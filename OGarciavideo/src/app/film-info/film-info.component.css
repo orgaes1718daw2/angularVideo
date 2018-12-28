@@ -5,7 +5,16 @@
 .card-img-top{
     width: 200px;
     height: 300px;
-    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.descripcion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .btn.btn-light{
     background-color: rgb(150, 225, 235);
@@ -13,6 +22,15 @@
 }
 
 .btn.btn-dark{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+
+}
+
+.btn.btn-success{
     background-color: rgb(233, 243, 140);
     color: black;
     font-weight: bold;

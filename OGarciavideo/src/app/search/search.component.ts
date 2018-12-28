@@ -14,6 +14,7 @@ export class SearchComponent implements OnInit {
 
   public tag: string;
   public pelis: pelicula[] = [];//array, [] para mas de 1
+  public pelisFavoritas: number[] = [];
 
 
   constructor(
@@ -38,6 +39,13 @@ export class SearchComponent implements OnInit {
             this.pelis.push(peli);
           }
         });
+        this.pelis.forEach(peli => {
+          let esFavorita = localStorage.getItem('peli_' + peli.id);
+          if (esFavorita != undefined) {
+            if (esFavorita == '1')
+              this.pelisFavoritas.push(peli.id);
+          }
+        });
       });
     });
 
@@ -48,5 +56,12 @@ export class SearchComponent implements OnInit {
   public infopeli(id: number) {
     this.router.navigate(['/filminfo',{id: id}]);
   }
+
+  public esPeliFavorita(id: number): boolean {
+    if( this.pelisFavoritas.find(peliFavorita => peliFavorita == id) != undefined)
+      return true;
+    else 
+      return false;
+    }
 
 }

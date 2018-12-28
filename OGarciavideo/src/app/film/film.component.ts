@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-film',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilmComponent implements OnInit {
 
-  constructor() { }
+  public id: number;
+
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private router: Router) 
+    { }
 
   ngOnInit() {
+
+    this.activatedRoute.params.subscribe(params => {
+      this.id = params['id'];
+    });
+
+    
+  }
+
+  public infopeli(id: number) {
+    this.router.navigate(['/filminfo', { id: id }]);
   }
 
 }
