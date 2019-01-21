@@ -1,0 +1,7 @@
+<div class="fondo">
+<button type="button" class="btn btn-dark" (click)="infopeli(id)">← INFO</button>
+<video controls autoplay>
+    <source src="{{ 'http://localhost:8888/archivo?nombre=' + id + '.mp4' }}">
+        No es posible reproducir el video
+</video>
+</div>

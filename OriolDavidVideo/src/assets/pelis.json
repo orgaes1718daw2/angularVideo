@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "nombre" : "Animales fantásticos: Los crímenes de Grindelwald",
+        "genero" : "Fantástico",
+        "director" : "David Yates",
+        "descripcion" : "Grindewald ha logrado escapar y pretende encabezar una revuelta de los magos purasangre para dominar el mundo. Dumbledore, acompañado por su antiguo estudiante Scamander, tratará de evitar que quien fuera su gran amigo cumpla su siniestro propósito."
+    },
+    {
+        "id": 1,
+        "nombre" : "Harry Potter y las Reliquias de la Muerte",
+        "genero" : "Fantástico",
+        "director" : "David Yates",
+        "descripcion" : "Harry, Ron y Hermione se marchan de Hogwarts para iniciar su misión más importante: tienen que destruir los horrocruces, el secreto del poder y la inmortalidad de Voldemort, en los que el temido mago oscuro guarda los fragmentos de su alma."
+    },
+    {
+        "id": 2,
+        "nombre" : "Bohemian Rapsody",
+        "genero" : "drama",
+        "director" : "Bryan Singer",
+        "descripcion" : "Freddie Mercury, vocalista del grupo Queen, tiene una vida de excesos y descontrol que pone en peligro la carrera de sus compañeros. Deberán encontrar la forma de permanecer juntos mientras navegan sus años más exitosos."
+    },
+    {
+        "id": 3,
+        "nombre" : "La noche de Halloween",
+        "genero" : "suspense",
+        "director" : "David Gordon Green",
+        "descripcion" : "El despiadado Michael Myers escapa del autobús en el que estaba siendo trasladado y regresa a Haddonfield, Illinois, para asesinar a Laurie Strode, quien lleva cuarenta años sufriendo la locura de este monstruo sanguinario."
+    },
+    {
+        "id": 4,
+        "nombre" : "Night School",
+        "genero" : "comedia",
+        "director" : "Malcolm D. Lee",
+        "descripcion" : "Debido a un tremendo error que cometió, Teddy, un vendedor exitoso, se ve obligado a asistir a la escuela nocturna para obtener el diploma de Educación General Básica. Allí, Teddy convivirá con compañeros ineptos y una profesora un tanto agresiva."
+    }
+    
+]
